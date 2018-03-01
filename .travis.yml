@@ -6,7 +6,7 @@ compiler:
 addons:
   apt:
     sources:
-    - bitcoin/bitcoin
+    - sourceline: 'ppa:bitcoin/bitcoin'
     packages:
     - build-essential
     - libtool
