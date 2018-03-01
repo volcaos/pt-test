@@ -19,8 +19,6 @@ addons:
 # BerkeleyDB
     - libboost-all-dev
     - software-properties-common
-    - libdb4.8-dev
-    - libdb4.8++-dev
 # c-lightning
     - autoconf
     - automake
