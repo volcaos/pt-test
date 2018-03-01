@@ -2,7 +2,7 @@
 
 # Ubuntuのパッケージ更新
 apt update
-apt upgrade -y
+#apt upgrade -y
 
 # 必要なパッケージのインストール
 apt install -y build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3
