@@ -5,6 +5,8 @@ compiler:
 
 addons:
   apt:
+    sources:
+    - bitcoin/bitcoin
     packages:
     - build-essential
     - libtool
@@ -19,6 +21,8 @@ addons:
 # BerkeleyDB
     - libboost-all-dev
     - software-properties-common
+    - libdb4.8-dev
+    - libdb4.8++-dev
 # c-lightning
     - autoconf
     - automake
@@ -31,12 +35,13 @@ addons:
     - python3
     - net-tools
     - libsodium-dev
+    - libsodium-dev
 
 before_install:
-  - sudo add-apt-repository -y ppa:bitcoin/bitcoin
+#  - sudo add-apt-repository -y ppa:bitcoin/bitcoin
   - sudo apt-get update -q
   - sudo apt-get upgrade -y
-  - sudo apt install -y libdb4.8-dev libdb4.8++-dev
+#  - sudo apt install -y libdb4.8-dev libdb4.8++-dev
 
 install:
   - sudo ./install.sh
