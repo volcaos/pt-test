@@ -7,6 +7,7 @@ addons:
   apt:
     sources:
     - sourceline: 'ppa:bitcoin/bitcoin'
+    - sourceline: 'ppa:chris-lea/libsodium'
     packages:
     - build-essential
     - libtool
@@ -34,7 +35,6 @@ addons:
     - python
     - python3
     - net-tools
-    - libsodium-dev
     - libsodium-dev
 
 before_install:
