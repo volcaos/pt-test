@@ -8,4 +8,4 @@ addons:
     packages:
 
 script:
-  - setup.sh
+  - ./setup.sh
